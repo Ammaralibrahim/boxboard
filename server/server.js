@@ -13,7 +13,8 @@ mongoose.connect('mongodb+srv://ammar:alibrahim@cluster0.51i7rk6.mongodb.net/box
 
 // Kullanıcı ve Kutu modellerini tanımla
 const UserSchema = new mongoose.Schema({
-    name: String,
+    
+    name: String, 
     email: { type: String, unique: true },
     password: String,
 });
